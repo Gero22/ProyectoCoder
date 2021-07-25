@@ -1,0 +1,18 @@
+@import "main";
+@import "fuentes";
+@import "variables";
+
+@each $red, $color in $redes {
+    .BarraInf--#{$red} {
+        background-color: $color;
+    }
+ }
+ @mixin redes() {
+font-family: $fuente;
+font-size: 18px;
+padding: 0.5em 0.75em;
+     
+ }
+ .BarraInf{
+     @include redes();
+ }

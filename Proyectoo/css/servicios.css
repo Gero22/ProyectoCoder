@@ -1,0 +1,36 @@
+@media all and (min-width: 768px) {
+    #contenedorPrincipal{
+ 
+       display:grid;
+       grid-template-areas: 
+       "menu menu"
+       " titulo titulo "
+       "serv serv "
+       "serv serv"
+       "sociales sociales";   
+                     
+       }
+       
+       .contenedorServicios{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        grid-area: serv;   
+        
+       }
+       .contenedorServicios div{
+        margin: 20px;
+        width: 200px;
+       }
+     
+       .BarraInf div{
+        
+        
+       }     
+       .tituloServ{
+        grid-area: titulo;
+        text-align: center;
+        
+       }
+       
+    }

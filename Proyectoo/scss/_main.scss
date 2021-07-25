@@ -1,0 +1,98 @@
+*{
+    margin : 0 ;
+    padding: 0;
+ }
+ 
+ .contenedor{
+     display: grid;
+     grid-template-areas: 
+      "logo"
+      "menu"
+      "presentacion"
+      "cuadrados"
+      "sociales"
+      ;     
+      @media all and (min-width: 768px) {
+        display:grid;
+        grid-template-areas: 
+        "menu menu "
+        "presentacion presentacion "
+        "cuadrados cuadrados "
+        "sociales sociales ";   
+      }  
+      @media all and (min-width:992px){
+        display:grid;
+        grid-template-areas: 
+        "menu menu"
+        "presentacion presentacion"
+        "cuadrados cuadrados"
+        "sociales sociales";   
+          background-image:url(/Proyecto/Imagenes/duki.jpg);
+          background-repeat: repeat;
+      }
+ }
+ 
+ .cuadrados{
+   
+    grid-area: cuadrados;
+    justify-self: center;
+    @media all and (min-width: 768px) {
+        grid-area: cuadrados;
+        display: flex;
+        flex-direction: column;
+        justify-self:center;
+     }
+   
+     a{
+         text-align: center;
+     }
+     h3{
+         text-align: center;
+     }
+}
+
+       #caja2{
+        grid-area: sociales;
+       }   
+       .botonCuadrado{
+           text-decoration: none;
+           }
+        .BarraInf {
+          
+            grid-area: sociales;
+            display: flex;
+            flex-direction: column;
+
+            @media all and (min-width: 768px){
+              display:flex;
+              grid-area: sociales;
+              justify-content: space-around;
+            }
+              @media all and (min-width: 992px){
+                grid-area: sociales;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+              }
+          }   
+          
+ 
+    .Presentacion{
+        grid-area: presentacion;
+        background-color: yellow;
+    }
+    .wp{
+      background-color: aqua;  
+     } 
+     
+        .titulos{ 
+            @media all and (min-width: 992px) {
+            text-decoration-style: dashed;
+             text-align: center;
+             text-decoration-style: solid;
+          }    
+    
+    }
+ 
+ 
+ 

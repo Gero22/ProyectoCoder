@@ -1,0 +1,44 @@
+.contenedor{
+ 
+    display:grid;
+    
+    grid-template-areas: 
+    "titulo titulo"
+    "a a"
+    "sobre sobre"
+    "skills skills";   
+    
+            
+    }
+
+.TituloSobre{
+ display: flex;
+ grid-area: titulo;
+ justify-content: center;
+ }
+
+
+
+ .barras{
+ display:flex;
+ grid-area: skills;
+ flex-direction: column;
+ }
+
+.info h4{
+ grid-area: quiensoy;
+}
+.Sobre{
+ justify-content: space-around;
+ grid-area: sobre;
+ display: flex;
+ flex-direction: row-reverse;
+ 
+ 
+}
+.TituloSkills{
+ display: flex;
+ grid-area:skills;
+}
+
+ 

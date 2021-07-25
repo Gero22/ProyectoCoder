@@ -1,0 +1,46 @@
+*{
+    margin : 0 ;
+    padding: 0;
+ }
+
+.contenedorPrincipal{
+
+display:grid;
+grid-template-areas: 
+      "logo"
+      "menu"
+      "presentacion"
+      "cuadrados"
+      "sociales"
+      ;      
+   }
+@media all and (min-width: 768px) {
+    #contenedorPrincipal{
+ 
+       display:grid;
+       grid-template-areas: 
+       "menu menu"
+       "titulo titulo "
+       "pro pro"
+       "pro pro"
+       "sociales sociales"; 
+         
+            }
+            .contenedorPortfolio{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                grid-area: pro;       
+               }
+               .contenedorPortfolio div{
+                margin: 20px;
+                width: 200px;
+               }
+               .tituloPortfolio{
+                grid-area: titulo;
+                text-align: center;
+                
+               }
+    }
+   
+     
